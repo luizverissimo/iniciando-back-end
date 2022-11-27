@@ -1,0 +1,21 @@
+_id: req_4afc39ad44124ed7b7b275c5c8120c8c
+type: Request
+parentId: fld_1309041eba9c41da9e62e023e1ba7872
+modified: 1669552978920
+created: 1669552889741
+url: "{{ _.base_url }}/appointments"
+name: List
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1669552889741
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

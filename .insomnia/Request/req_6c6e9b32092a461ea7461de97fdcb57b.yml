@@ -1,0 +1,30 @@
+_id: req_6c6e9b32092a461ea7461de97fdcb57b
+type: Request
+parentId: fld_f68d9349371040bfade165e1e06d0eb6
+modified: 1669553053520
+created: 1669552806140
+url: "{{ _.base_url }}/users"
+name: Create
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name":"Luiz Verissimo",
+    	"email":"luizverissimosouza2@gmail.com",
+    	"password":"123"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1669552806140
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

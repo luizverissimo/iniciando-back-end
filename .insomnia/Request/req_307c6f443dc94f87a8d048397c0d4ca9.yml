@@ -1,0 +1,29 @@
+_id: req_307c6f443dc94f87a8d048397c0d4ca9
+type: Request
+parentId: fld_1309041eba9c41da9e62e023e1ba7872
+modified: 1669553056916
+created: 1669552873226
+url: "{{ _.base_url }}/appointments"
+name: Create
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"provider_id":"fd66365e-4613-4a32-9cb2-a9cdffc84b96",
+    	"date":"{% now 'iso-8601', '' %}"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1669552873226
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
