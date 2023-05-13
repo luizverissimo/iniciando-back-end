@@ -8,6 +8,7 @@
     "date-fns": "^2.29.3",
     "express": "^4.18.1",
     "jsonwebtoken": "^9.0.0",
+    "multer": "^1.4.5-lts.1",
     "pg": "^8.8.0",
     "reflect-metadata": "^0.1.13",
     "uuidv4": "^6.2.13"
@@ -22,6 +23,7 @@
     "@types/bcryptjs": "^2.4.2",
     "@types/express": "^4.17.13",
     "@types/jsonwebtoken": "^9.0.2",
+    "@types/multer": "^1.4.7",
     "@typescript-eslint/eslint-plugin": "^5.31.0",
     "@typescript-eslint/parser": "^5.31.0",
     "eslint": "^8.20.0",
