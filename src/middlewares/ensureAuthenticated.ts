@@ -2,6 +2,8 @@ import { Request, Response, NextFunction } from 'express';
 import { verify } from 'jsonwebtoken';
 import authConfig from '../config/auth';
 
+import AppError from '../errors/AppError';
+
 interface TokenPayload {
   iat: number;
   exp: number;
@@ -16,19 +18,15 @@ export default function ensureAuthenticated(
   const authHeader = request.headers.authorization;
 
   if (!authHeader) {
-    throw new Error('JWT is missing!');
+    throw new AppError('JWT is missing!', 401);
   }
 
   const [, token] = authHeader.split(' ');
 
-  try {
-    const decoded = verify(token, authConfig.jwt.secret);
+  const decoded = verify(token, authConfig.jwt.secret);
 
-    const { sub } = decoded as TokenPayload;
+  const { sub } = decoded as TokenPayload;
 
-    request.user = { id: sub };
-    return next();
-  } catch {
-    throw new Error('Invalid JWT token');
-  }
+  request.user = { id: sub };
+  return next();
 }
